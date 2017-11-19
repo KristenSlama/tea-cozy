@@ -1,10 +1,25 @@
-* {
+html {
   font-family: Helvetica, sans-serif;
-  font-size: 22px;
   color: seashell;
   background-color: black;
   opacity: 0.9;
   text-align: center;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4, nav {
+  font-size: 22px;
+}
+
+h5 {
+  font-size: 20px;
 }
 
 header {
@@ -17,6 +32,7 @@ header {
   width: 100%;
   justify-content: space-between;
   border-bottom: 1px solid seashell;
+  background-color: rgba(0,0,0,0.9);
 }
 
 #logo {
@@ -27,7 +43,6 @@ header {
 }
 
 nav {
-  color: inherit;
   position: relative;
   justify-content: center;
   padding: 10px;
@@ -44,13 +59,132 @@ nav li {
 nav li a {
   padding: 10px;
   text-decoration: underline;
+  color: seashell;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 60px;
+  margin: 0px auto;
 }
 
 #mission {
   background-image: url(./images/mission-background.jpg);
+  display: flex;
+  flex-direction: row;
   width: 1200px;
   height: 700px;
+  justify-content: center;
+}
+
+.headline {
+  display: block;
+  flex-direction: column;
   justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  margin: 15px auto;
+  background-color: rgba(0,0,0,0.9);
+}
+
+.headline.hero {
+  position: relative;
+  top: 275px;
+}
+
+.headline h2, h4{
+  margin: 0px auto;
+  padding: 10px;
+}
+
+#featured {
+  display: inline-flex;
+  flex-direction: column;
+  width: 1000px;
+}
+
+#featured .row {
   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#featured .row-bottom {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  width: 675px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#featured img {
+  width: 300px;
+  height: 200px;
+}
+
+#featured .column h5 {
+  margin-top: 10px;
+}
+
+#locations {
+  background-image: url(./images/locations-background.jpg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   align-content: center;
+  width: 1200px;
+  height: 500px;
+}
+
+#locations h2 {
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  width: 980px;
+  align-self: center;
+}
+
+.box {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-around;
+  background-color: rgba(0,0,0,1);
+}
+
+.box h3, p {
+  margin: 0 auto;
+}
+
+#contact {
+  height: 200px;
+}
+
+footer {
+  text-align: left;
+  margin: 30px 20px;
+  padding-top: 50px;
+  display: block;
+  position: relative;
+  bottom: 0;
 }
